@@ -21,6 +21,34 @@ This network design assumes the following
   - Guest Network 192.168.102.0/24
     - Port 5 (with connected wifi access point)
     
+
+## Command basics
+Slash takes you back to the root/home:
+```
+/
+```
+Specify a feature of the router with '/<feature> <sub-feature>'. If you then press enter you will be taken to that feature.
+```
+/system interface
+```
+View what is set with 'print' or 'export' which gives the command to set the current configuration:
+```
+/system interface
+print
+#or
+/system interface export
+```
+Line starting with a '#' is a comment eg:
+```
+#This command lists the assigned dhcp ip addresses
+/ip dhcp-server lease print
+```
+View the full current configuration of the router with (this is also the command you can run to get your config to pust to forums to get help):
+```
+/ export hide-sensitive
+```
+
+
 ## Start with a reset
  - It is assumed that you have reset the router to the default configuration.
  - To reset the router remove power, press and continue to hold the reset button in until the sfp port light comes on and then begins to flash, then release the reset button. OR run:
@@ -236,11 +264,11 @@ It is important to set a new username and password to prevent hackers from attem
 ```
 
 ## Configure automatic updates
-Its important to run the latest version of routerOS so that your router has the latest security fixes. The following adds a script that runs daily at 3am that updates the router and restarts it... (TODO only reboot if update was available)
+Its important to run the latest version of routerOS so that your router has the latest security fixes. The following adds a script that every second day and attempts to update the router. If there is no update then the script exits with an error on the 'download 0' command and will not reboot the router.
 
 ```
-/system scheduler
-add interval=1d name=Upgrade_Router on-event=”/system upgrade\r\
+# create download and update script
+ /system script add name=DownloadAndUpdate source="/system upgrade\r\
 \nrefresh\r\
 \n:delay 20\r\
 \ndownload 0\r\
@@ -248,9 +276,11 @@ add interval=1d name=Upgrade_Router on-event=”/system upgrade\r\
 \n/system reboot \r\
 \n:delay 60\r\
 \ny\r\
-\n/” policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive \
-start-date=apr/25/2020 start-time=03:00:01
-/
+\n/"
+
+# schedule script to run every 2 days
+/system scheduler
+add interval=2d name=Upgrade_Router on-event="run DownloadAndUpdate" policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive start-date=apr/25/2020 start-time=03:00:01
 ```
 
 ## Reboot the router
@@ -262,6 +292,12 @@ Everything should now be setup so lets reboot to check that the router comes bac
 ## Test the configuration
 Its a good idea to connect to each VLAN and check that you can only access that VLAN.
 
+## Backup configuration
+Run the command and then in winbox or webfig go the 'Files' menu and select to download the file with the name you specified in the command.
+```
+/system backup save name=MyConfig
+```
+
 
 ## General References:
 
@@ -272,6 +308,7 @@ Its a good idea to connect to each VLAN and check that you can only access that 
 - [Mikrotik Forums: pcunite - Using RouterOS to VLAN](https://forum.mikrotik.com/viewtopic.php?t=143620)
 - [Mikrotik Forums: Help checking my hEX S config for home office](https://forum.mikrotik.com/viewtopic.php?f=13&t=159905)
 - [Rick Frey Consulting: Auto upgrade Mikrotik](https://rickfreyconsulting.com/auto-upgrade-with-mikrotik/)
+- [Mikrotik: Backup](https://wiki.mikrotik.com/wiki/Manual:System/Backup#Saving_a_backup)
 
 ## Advanced Setup
 
