@@ -307,7 +307,7 @@ Run the command and then in winbox or webfig go the 'Files' menu and select to d
 ```
 
 
-## General References:
+## General Links
 
 - [Mikrotik: How to configure a home router](https://wiki.mikrotik.com/wiki/How_to_configure_a_home_router)
 - [Mikrotik: Securing Your Router](https://wiki.mikrotik.com/wiki/Manual:Securing_Your_Router)
@@ -318,7 +318,7 @@ Run the command and then in winbox or webfig go the 'Files' menu and select to d
 - [Rick Frey Consulting: Auto upgrade Mikrotik](https://rickfreyconsulting.com/auto-upgrade-with-mikrotik/)
 - [Mikrotik: Backup](https://wiki.mikrotik.com/wiki/Manual:System/Backup#Saving_a_backup)
 
-## Advanced Setup
+## Advanced Links
 
  - [Mikrotik DoS Attack Protection](https://wiki.mikrotik.com/wiki/DoS_attack_protection)
  - [Mikrotik DDos Detection and Blocking](https://wiki.mikrotik.com/wiki/DDoS_Detection_and_Blocking)
