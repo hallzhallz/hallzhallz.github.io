@@ -236,10 +236,21 @@ It is important to set a new username and password to prevent hackers from attem
 ```
 
 ## Configure automatic updates
-Its important to run the latest version of routerOS so that your router has the latest security fixes.
+Its important to run the latest version of routerOS so that your router has the latest security fixes. The following adds a script that runs daily at 3am that updates the router and restarts it... (TODO only reboot if update was available)
 
 ```
-#TODO
+/system scheduler
+add interval=1d name=Upgrade_Router on-event=”/system upgrade\r\
+\nrefresh\r\
+\n:delay 20\r\
+\ndownload 0\r\
+\n/\r\
+\n/system reboot \r\
+\n:delay 60\r\
+\ny\r\
+\n/” policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive \
+start-date=apr/25/2020 start-time=03:00:01
+/
 ```
 
 ## Reboot the router
@@ -260,6 +271,7 @@ Its a good idea to connect to each VLAN and check that you can only access that 
 - [Murray's Blog: Use a Mikrotik as Your Home Router](https://blog.ligos.net/2017-02-16/Use-A-Mikrotik-As-Your-Home-Router.html)
 - [Mikrotik Forums: pcunite - Using RouterOS to VLAN](https://forum.mikrotik.com/viewtopic.php?t=143620)
 - [Mikrotik Forums: Help checking my hEX S config for home office](https://forum.mikrotik.com/viewtopic.php?f=13&t=159905)
+- [Rick Frey Consulting: Auto upgrade Mikrotik](https://rickfreyconsulting.com/auto-upgrade-with-mikrotik/)
 
 ## Advanced Setup
 
