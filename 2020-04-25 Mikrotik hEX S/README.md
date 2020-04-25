@@ -2,7 +2,7 @@
 ## Secure Mikrotik Router Hex S RB760iGS for Home Office Use
 _**Disclaimer:** These are personal notes for config and there are no guarantees of security after applying these config settings._
 
-This guide was produced from the links below and with some help from the [Mikrotik Forum](https://forum.mikrotik.com/viewtopic.php?f=13&t=159905).
+This is a guide for setting up the Mikrotik Hex S RB760iGS Router and was produced from the links below and with help from the [Mikrotik Forum](https://forum.mikrotik.com/viewtopic.php?f=13&t=159905).
 
 ## Home Office Network Design
 
