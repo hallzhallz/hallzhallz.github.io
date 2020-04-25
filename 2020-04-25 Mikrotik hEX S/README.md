@@ -47,7 +47,7 @@ View the full current configuration of the router with (this is also the command
 ```
 / export hide-sensitive
 ```
-
+For more on commands see the [Basic Commands in Mikrotik Documentation](https://wiki.mikrotik.com/wiki/How_to_configure_a_home_router#Basic_commands).
 
 ## Start with a reset
  - It is assumed that you have reset the router to the default configuration.
