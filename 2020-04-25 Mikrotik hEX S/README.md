@@ -50,11 +50,19 @@ View the full current configuration of the router with (this is also the command
 For more on commands see the [Basic Commands in Mikrotik Documentation](https://wiki.mikrotik.com/wiki/How_to_configure_a_home_router#Basic_commands).
 
 ## Start with a reset
- - It is assumed that you have reset the router to the default configuration.
- - To reset the router remove power, press and continue to hold the reset button in until the sfp port light comes on and then begins to flash, then release the reset button. OR run:
+It is assumed that you have reset the router to the default configuration.
+- To reset physically
+  - Disconnect power
+  - Press and continue to hold the reset button
+  - Connect power
+  - When the sfp port light comes on and then begins to flash, release the reset button.
+- To reset remotely
+  - Connect to the router and run the command below.
+  - Enter 'y' and enter for yes when prompted.
 ```
 /system reset-configuration
 ```
+The router should beep twice once it has finished rebooting.
 
 ## Login to the router
  - Connect computer to one of the ports 2-4 and
