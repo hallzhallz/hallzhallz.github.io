@@ -1,8 +1,8 @@
 
-# >>> IN PROGRESS DO NOT USE <<<
-
 ## Secure Mikrotik Router Hex S RB760iGS for Home Office Use
 _**Disclaimer:** These are personal notes for config and there are no guarantees of security after applying these config settings._
+
+This guide was produced from the links below and with some help from the [Mikrotik Forum](https://forum.mikrotik.com/viewtopic.php?f=13&t=159905).
 
 ## Home Office Network Design
 
@@ -259,6 +259,7 @@ Its a good idea to connect to each VLAN and check that you can only access that 
 - [Mikrotik Help: Webfig - Enable HTTPS](https://help.mikrotik.com/docs/display/ROS/Webfig)
 - [Murray's Blog: Use a Mikrotik as Your Home Router](https://blog.ligos.net/2017-02-16/Use-A-Mikrotik-As-Your-Home-Router.html)
 - [Mikrotik Forums: pcunite - Using RouterOS to VLAN](https://forum.mikrotik.com/viewtopic.php?t=143620)
+- [Mikrotik Forums: Help checking my hEX S config for home office](https://forum.mikrotik.com/viewtopic.php?f=13&t=159905)
 
 ## Advanced Setup
 
