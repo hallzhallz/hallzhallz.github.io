@@ -213,7 +213,6 @@ add action=drop chain=forward comment="Drop all other traffic"
 
 ## Secure the router
 We lock down the router management features to reduce the ways someone might try to access the router.
- - Setup SSL Cert
 
 ```
 # Disable all the configuration methods except ssh, www-ssl and winbox
