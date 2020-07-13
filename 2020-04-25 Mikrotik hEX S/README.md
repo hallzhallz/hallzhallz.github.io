@@ -5,7 +5,8 @@ _**Disclaimer:** These are personal notes for config and there are no guarantees
 This is a guide for setting up the Mikrotik Hex S RB760iGS Router and was produced from the links below and with help from the [Mikrotik Forum](https://forum.mikrotik.com/viewtopic.php?f=13&t=159905).
 
 I bought my router through Amazon (Affiliate Link):
-[Mikrotik Hex S RB760iGS Router on Amazon.com](https://amzn.to/302DoEf)
+
+[Amazon.com: MikroTik hEX S Gigabit Ethernet Router with SFP Port (RB760iGS)](https://amzn.to/302DoEf)
 
 ## Home Office Network Design
 
