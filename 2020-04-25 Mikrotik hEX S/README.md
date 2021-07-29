@@ -298,8 +298,8 @@ y\r\n\
 
 # schedule scripts to run every 2 days
 /system scheduler
-add interval=2d name=Upgrade_Router on-event="run DownloadAndUpdate" policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive start-date=apr/25/2020 start-time=03:00:01
-add interval=2d name=Upgrade_Router on-event="run UpdateFirmware" policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive start-date=apr/25/2020 start-time=04:00:01
+add interval=2d name=Upgrade_Software on-event="run DownloadAndUpdate" policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive start-date=apr/25/2020 start-time=03:00:01
+add interval=2d name=Upgrade_Firmware on-event="run UpdateFirmware" policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive start-date=apr/25/2020 start-time=04:00:01
 ```
 
 ## Reboot the router
