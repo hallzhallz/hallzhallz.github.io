@@ -279,15 +279,12 @@ Its important to run the latest version of routerOS so that your router has the 
 
 ```
 # create download and update script
- /system script add name=DownloadAndUpdate source="/system upgrade\r\
-\nrefresh\r\
-\n:delay 20\r\
-\ndownload 0\r\
-\n/\r\
-\n/system reboot \r\
-\n:delay 60\r\
-\ny\r\
-\n/"
+/system script add name=DownloadAndUpdate source="\
+/system package update\r\n\
+check-for-updates once\r\n\
+:delay 30s;\r\n\
+install\r\n\
+/"
 
 # schedule script to run every 2 days
 /system scheduler
@@ -320,6 +317,7 @@ Run the command and then in winbox or webfig go the 'Files' menu and select to d
 - [Mikrotik Forums: Help checking my hEX S config for home office](https://forum.mikrotik.com/viewtopic.php?f=13&t=159905)
 - [Rick Frey Consulting: Auto upgrade Mikrotik](https://rickfreyconsulting.com/auto-upgrade-with-mikrotik/)
 - [Mikrotik: Backup](https://wiki.mikrotik.com/wiki/Manual:System/Backup#Saving_a_backup)
+- [Mikrotik: Auto Upgrade](https://wiki.mikrotik.com/wiki/Manual:Upgrading_RouterOS#RouterOS_massive_auto-upgrade)
 
 ## Advanced Links
 
