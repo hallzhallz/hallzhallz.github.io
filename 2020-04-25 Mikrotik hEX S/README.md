@@ -285,10 +285,21 @@ check-for-updates once\r\n\
 :delay 30s;\r\n\
 install\r\n\
 /"
+  
+# firmware update script
+/system script add name=UpdateFirmware source="\
+/system routerboard upgrade\r\n\
+:delay 3s;\r\n\
+y\r\n\
+/system reboot\r\n\
+:delay 3s;\r\n\
+y\r\n\
+/"
 
-# schedule script to run every 2 days
+# schedule scripts to run every 2 days
 /system scheduler
 add interval=2d name=Upgrade_Router on-event="run DownloadAndUpdate" policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive start-date=apr/25/2020 start-time=03:00:01
+add interval=2d name=Upgrade_Router on-event="run UpdateFirmware" policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive start-date=apr/25/2020 start-time=04:00:01
 ```
 
 ## Reboot the router
