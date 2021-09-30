@@ -290,10 +290,7 @@ install\r\n\
 /system script add name=UpdateFirmware source="\
 /system routerboard upgrade\r\n\
 :delay 3s;\r\n\
-y\r\n\
 /system reboot\r\n\
-:delay 3s;\r\n\
-y\r\n\
 /"
 
 # schedule scripts to run every 2 days
