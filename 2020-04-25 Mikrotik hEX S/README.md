@@ -4,6 +4,10 @@ _**Disclaimer:** These are personal notes for config and there are no guarantees
 
 This is a guide for setting up the Mikrotik Hex S RB760iGS Router and was produced from the links below and with help from the [Mikrotik Forum](https://forum.mikrotik.com/viewtopic.php?f=13&t=159905).
 
+I bought my router through Amazon (Affiliate Link):
+
+[Amazon.com: MikroTik hEX S Gigabit Ethernet Router with SFP Port (RB760iGS)](https://amzn.to/302DoEf)
+
 ## Home Office Network Design
 
 ![Image of home office network design](./mikrotik-router-network-diagram.png)
@@ -275,19 +279,24 @@ Its important to run the latest version of routerOS so that your router has the 
 
 ```
 # create download and update script
- /system script add name=DownloadAndUpdate source="/system upgrade\r\
-\nrefresh\r\
-\n:delay 20\r\
-\ndownload 0\r\
-\n/\r\
-\n/system reboot \r\
-\n:delay 60\r\
-\ny\r\
-\n/"
+/system script add name=DownloadAndUpdate source="\
+/system package update\r\n\
+check-for-updates once\r\n\
+:delay 30s;\r\n\
+install\r\n\
+/"
+  
+# firmware update script
+/system script add name=UpdateFirmware source="\
+/system routerboard upgrade\r\n\
+:delay 3s;\r\n\
+/system reboot\r\n\
+/"
 
-# schedule script to run every 2 days
+# schedule scripts to run every 2 days
 /system scheduler
-add interval=2d name=Upgrade_Router on-event="run DownloadAndUpdate" policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive start-date=apr/25/2020 start-time=03:00:01
+add interval=2d name=Upgrade_Software on-event="run DownloadAndUpdate" policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive start-date=apr/25/2020 start-time=03:00:01
+add interval=2d name=Upgrade_Firmware on-event="run UpdateFirmware" policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive start-date=apr/25/2020 start-time=04:00:01
 ```
 
 ## Reboot the router
@@ -316,6 +325,7 @@ Run the command and then in winbox or webfig go the 'Files' menu and select to d
 - [Mikrotik Forums: Help checking my hEX S config for home office](https://forum.mikrotik.com/viewtopic.php?f=13&t=159905)
 - [Rick Frey Consulting: Auto upgrade Mikrotik](https://rickfreyconsulting.com/auto-upgrade-with-mikrotik/)
 - [Mikrotik: Backup](https://wiki.mikrotik.com/wiki/Manual:System/Backup#Saving_a_backup)
+- [Mikrotik: Auto Upgrade](https://wiki.mikrotik.com/wiki/Manual:Upgrading_RouterOS#RouterOS_massive_auto-upgrade)
 
 ## Advanced Links
 
