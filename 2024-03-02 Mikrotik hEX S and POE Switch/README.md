@@ -1,12 +1,14 @@
 
-## Secure Mikrotik Router Hex S RB760iGS for Home Office Use
+## Secure Mikrotik Router Hex S RB760iGS for Home Office Use with a POE Smart Switch
 _**Disclaimer:** These are personal notes for config and there are no guarantees of security after applying these config settings._
 
 This is a guide for setting up the Mikrotik Hex S RB760iGS Router and was produced from the links below and with help from the [Mikrotik Forum](https://forum.mikrotik.com/viewtopic.php?f=13&t=159905).
 
-I bought my router through Amazon (Affiliate Link):
+I bought my router and POE Switch through Amazon (Affiliate Link):
 
 [Amazon.com: MikroTik hEX S Gigabit Ethernet Router with SFP Port (RB760iGS)](https://amzn.to/302DoEf)
+
+[Amazon.com: TP-Link 16-Port Gigabit Easy Smart PoE Switch TL-SG1016PE ](https://www.amazon.com/TP-Link-Unmanaged-Rackmount-Lifetime-TL-SG1016PE/dp/B0721V1TGV/ref=sr_1_2?crid=1O9WKVB9XUQHN&amp;dib=eyJ2IjoiMSJ9.tOvWqJrTUwqO-MzQvid02MQ_x2oGUZy1qP-nY2cC8jsDb6aWaGM1cfug0XplVE2DdNVIETR81OZJ8eEqjkJOy1pBCyOZkmKY_QyJvzGDGQzgfRzrCAgCol_ysYnAHKMq9aSDNKGQw0eKHM6-w35RPKZzIbve8a9aCuhrsGK9EWEo3VpCLAR_1CVvhNsajFnUbrg_EBYiEnNauM8SaqvaoB8daMS4bZAMdH3tZzGl_EI.UQASS9-qh-VXfWFvOLhfa5ygWzDsG2hUTefkd2wL7BU&amp;dib_tag=se&amp;keywords=tp%252Blink%252Bsmart%252Bswitch%252Bpoe%252BSG1016PE&amp;qid=1709446839&amp;sprefix=tp%252Blink%252Bsmart%252Bswitch%252Bpoe%252Bsg1016pe%252Caps%252C287&amp;sr=8-2&amp;th=1&_encoding=UTF8&tag=robotificatio-20&linkCode=ur2&linkId=ff9c9f365d19cfc78f9eb6877903c3d5&camp=1789&creative=9325)
 
 ## Home Office Network Design
 
