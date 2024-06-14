@@ -73,7 +73,7 @@ The router should beep twice once it has finished rebooting.
 
 ## Login to the router
  - Connect computer to one of the ports 2-4 and
-   - SSH to the router on 192.168.88.1 with username 'admin' and password (blank).
+   - SSH to the router on 192.168.88.1 with username 'admin' and password (blank). Note: newer versions have default password written on the back.
    - Winbox to the router using discovered MAC Address
  - use username 'admin' and password (blank).
 
@@ -155,7 +155,7 @@ We need to tell the router which VLANs should relate to which ports. Note that P
 set pvid=100 frame-types=admit-only-untagged-and-priority-tagged [find interface=ether3]
 set pvid=101 frame-types=admit-only-untagged-and-priority-tagged [find interface=ether4]
 set pvid=100 frame-types=admit-all [find interface=ether5]
-set pvid=1 admit-only-vlan-tagged [find interface=ether2]
+set pvid=1 frame-types=admit-only-vlan-tagged [find interface=ether2]
 
 # Egress Behaviour
 /interface bridge vlan
