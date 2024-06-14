@@ -24,7 +24,8 @@ This network design assumes the following
     - Port 5 (with connected wifi access point)
   - Guest Network 192.168.102.0/24
     - Port 5 (with connected wifi access point)
-    
+
+Note: my AP (Ubiquiti) requires the main VLAN (VLAN 100) to be untagged on Port 5. However, other APs (e.g. tplink) have been known to require the main VLAN to be tagged as well.
 
 ## Command basics
 Slash takes you back to the root/home:
@@ -70,7 +71,7 @@ The router should beep twice once it has finished rebooting.
 
 ## Login to the router
  - Connect computer to one of the ports 2-4 and
-   - SSH to the router on 192.168.88.1 with username 'admin' and password (blank).
+   - SSH to the router on 192.168.88.1 with username 'admin' and password (blank). Note: newer versions have default password written on the back.
    - Winbox to the router using discovered MAC Address
  - use username 'admin' and password (blank).
 
