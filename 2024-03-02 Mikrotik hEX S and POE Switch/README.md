@@ -283,7 +283,7 @@ Its important to run the latest version of routerOS so that your router has the 
 
 ```
 # create download and update script
-/system script add name=DownloadAndUpdate source="\
+/system script add name=DownloadAndUpdate dont-require-permissions=yes source="\
 /system package update\r\n\
 check-for-updates once\r\n\
 :delay 30s;\r\n\
@@ -291,7 +291,7 @@ install\r\n\
 /"
   
 # firmware update script
-/system script add name=UpdateFirmware source="\
+/system script add name=UpdateFirmware dont-require-permissions=yes source="\
 /system routerboard upgrade\r\n\
 :delay 3s;\r\n\
 /system reboot\r\n\
@@ -299,8 +299,10 @@ install\r\n\
 
 # schedule scripts to run every 2 days
 /system scheduler
-add interval=2d name=Upgrade_Software on-event="run DownloadAndUpdate" policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive dont-require-permissions=yes start-date=apr/25/2020 start-time=03:00:01
-add interval=2d name=Upgrade_Firmware on-event="run UpdateFirmware" policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive dont-require-permissions=yes start-date=apr/25/2020 start-time=04:00:01
+add interval=2d name=Upgrade_Software on-event="run DownloadAndUpdate" policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive start-date=apr/25/2020 start-time=03:00:01
+add interval=2d name=Upgrade_Firmware on-event="run UpdateFirmware" policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive start-date=apr/25/2020 start-time=04:00:01
+
+
 ```
 
 ## Reboot the router
