@@ -73,7 +73,7 @@ Handy Linux commands and scripts
 
 Paper explaining Smart Antennas.
 
-[Program a PIC 16F690 with the DIY Kit 150 Programmer](/PicProgramming)
+[Program a PIC 16F690 with the DIY Kit 150 Programmer](/Articles/PicProgramming)
 2007-09-16
 
 A guide on how to program a 16F690 PIC Microcontroller.
