@@ -31,6 +31,10 @@ Line in for old Subaru stock radio.
 
 Print Fold Post is a printable envelope. Simply enter your address and print, and it will be output as a foldable template on A4 or Letter paper.
 
+[Easily reply to your google form responses](/GoogleFormReply)
+2010-01-22
+
+
 [Interactive Christmas](https://hallzhallz.github.io/InteractiveChristmas/index.htm)
 2009-12-08
 
