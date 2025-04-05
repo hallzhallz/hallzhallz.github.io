@@ -45,6 +45,11 @@ An browser based interactive christmas display.
 
 PDF Printable to-do list planners.
 
+
+[A Simple Javascript Namespace Manager](/JavascriptNamespaceManager.md)
+2009-08-16
+
+
 [How Apple should have implemented the controls on the new iPod Shuffle](/AppleShuffle)
 2009-03-18
 
