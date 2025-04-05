@@ -7,7 +7,7 @@ Here are detailed instructions of how I got the this working:
 1. Install fun_plug (I used the 0.5 version and had my DNS-323 running firmaware 1.08)
     - You only need to go as far as step 6 (ssh working & repository)
     - I started at step 3, as I already use a static IP for my DNS-323
-3. Reboot the DNS-323 after fun_plug is isntalled (required to get funpkg working)
+3. Reboot the DNS-323 after fun_plug is installed (required to get funpkg working)
 4. Install CURL, at the prompt type:
 ```
 cd /ffp/
