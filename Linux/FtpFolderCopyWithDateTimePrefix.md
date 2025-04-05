@@ -21,8 +21,11 @@ Moves files from the specified ftp directory to the specified local directory pr
 Create a .bat file with the script below. Then set the parameters at the beginnng of the script as follows:
 
 set server= *the ip address of your ftp server (in my case my scanner)*
+
 set fetch_directory= *the directory on the ftp server to copy/move files from*
+
 set target_dir = *the directory on the local computer to copy/move the files to*
+
 
 ## The Script
 
