@@ -68,6 +68,12 @@ Critique of the first iPod Shuffle and suggested better controls.
 Handy Linux commands and scripts
 
 
+[Smart Antennas](./Articles/SmartAntennas)
+2007-06-15
+
+Paper explaining Smart Antennas.
+
+
 
 ---
 
