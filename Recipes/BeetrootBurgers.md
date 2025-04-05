@@ -32,4 +32,4 @@
 12. Add to a burger bun with your favourite fillings.
 13. Enjoy!
 
-![](/BeetrootBurgers.jpg)
+![](./BeetrootBurgers.jpg)
