@@ -29,9 +29,9 @@ The following command line command prints a PDF file and moves it to a folder ca
 
 Prerequisites:
 
-•	GhostScript is installed
-•	Printer is installed (and is a hp laserjet)
-•	There is a ‘printed’ folder in the same folder as the PDF file 
+- GhostScript is installed
+- Printer is installed (and is a hp laserjet)
+- There is a ‘printed’ folder in the same folder as the PDF file 
 
 ```
 Gs –sDEVICE=ljet4 sOutputFile=|lpr *.pdf; mv *.pdf printed/; echo ALL DONE !!!;
@@ -47,7 +47,7 @@ Return to command mode with `Esc`.
 
 Quit without saving with ‘:q!’ in command mode.
 
-Quit with saving with ‘ZZ’ in command mode.
+Quit with saving with `ZZ` in command mode.
 
 Save with `:w` in command mode.
 
