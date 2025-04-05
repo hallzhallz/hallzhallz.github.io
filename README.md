@@ -25,10 +25,20 @@ Print Fold Post is a printable envelope. Simply enter your address and print, an
 
 An interactive christmas display
 
-[Any Day Planner](/Any%20Day%20Planner)
+[Planners](/Planners)
 2009-08-25
 
-Any Day Planner is a printable template for a to-do list.
+- **any_day_planner.pdf** is a printable template for a to-do list.
+- **notebook.pdf** is a printable notebook. For best results print as a duplex and staple book on an office copier.
+```
+______________
+|            |
+[]  staple   |
+|            |
+|            |
+[]  staple   |
+|____________|
+```
 
 [Linux](/Linux)
 2008-03-12
