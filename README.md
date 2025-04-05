@@ -45,6 +45,9 @@ ______________
 |____________|
 ```
 
+[How Apple should have implemented the controls on the new iPod Shuffle](/AppleShuffle)
+2009-03-18
+
 [Linux](/Linux)
 2008-03-12
 
