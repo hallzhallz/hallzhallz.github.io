@@ -64,3 +64,16 @@ Modify Configuration Defaults
 Open `/etc/vim/vimrc` or `.vimrc` in your home directory
 
 To turn on Syntax Highlighting by default, change the line “ syntax on to syntax on.
+
+## Find SAMBA Configuration smb.conf file
+
+run the command:
+```
+ps -Af | grep smb.conf
+```
+obviously samba will need to be running for this to work.
+
+Otherwise you can try the slower:
+```
+find / | grep smb.conf
+```
