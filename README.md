@@ -10,3 +10,8 @@ Windows application for displaying photos at a wedding.
 
 ## Articles
 
+
+
+
+---
+&copy; David Hall
