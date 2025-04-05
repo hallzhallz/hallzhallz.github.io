@@ -14,6 +14,11 @@ Windows application for displaying photos at a wedding.
 
 ## Articles
 
+[Using Food Dye Colouring as Ink](/FoodDyeInk)
+2011-08-16
+Experimenting using Food Dye in an Inkjet Printer.
+
+
 [Adding Aux Line-in (and USB Power) to an 03 Subaru Impreza Stock Radio](/LineInSubaruImprezaStockRadio)
 2011-08-13
 
