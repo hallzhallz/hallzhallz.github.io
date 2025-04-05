@@ -44,6 +44,8 @@ PDF Printable to-do list planners.
 [How Apple should have implemented the controls on the new iPod Shuffle](/AppleShuffle)
 2009-03-18
 
+Critique of the first iPod Shuffle and suggested better controls.
+
 [Linux](/Linux)
 2008-03-12
 
