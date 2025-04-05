@@ -3,6 +3,12 @@
 
 [Windows Batch Script: FTP Folder Copy with Date and Time](/Linux/FtpFolderCopyWithDateTimePrefix.md) 2012-02-04
 
+Windows batch script to copy files from an ftp server.
+
+[dns-323 ftp file copy using fun plug, curl and cron](/Linux/dns-323_ftp_file_copy.md) 2010-06-12
+
+Getting shell access and a cron file copy setup on an old D-Link DNS-323 NAS.
+
 
 # Handy Linux Commands
 Don’t forget the command: `man commandname` for program/command specific information. 
