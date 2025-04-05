@@ -6,7 +6,7 @@
 - 15ml Grenadine
 - 4 Strawberries
 - 2-3 Scoops Ice
-- 
+
 Blend to semi frappe
 
 ## Aqua Splice
@@ -18,7 +18,7 @@ Blend to semi frappe
 - 30ml Blue Curacao
 - 15ml Lime Cordial
 - 100ml Lemon Lime Mineral Water
-- 
+
 Blend seperately and pour together, GLASS: Large Martini
 
 ## Fruit Tingle
