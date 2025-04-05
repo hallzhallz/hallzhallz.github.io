@@ -47,7 +47,7 @@ echo The GREP is: $grep_stringecho The Source is: $source_ftp_direcho The Target
   echo ftp command is: $ftp_cmd  curl $source_ftp_site -Q "$ftp_cmd" fifi
 ```
 
-5. Create the file with the follwing under ‘/ffp/start’ called ‘appendcron.sh’ which will add our cron jobs to cron on boot:
+5. Create the file with the following under ‘/ffp/start’ called ‘appendcron.sh’ which will add our cron jobs to cron on boot:
 
 ```
 #!/bin/sh
