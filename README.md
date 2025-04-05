@@ -2,9 +2,11 @@
 
 ## Projects
 
-[2020-04-25 Secure Mikrotik Router Hex S RB760iGS for Home Office Use](/2020-04-25%20Mikrotik%20hEX%20S#secure-mikrotik-router-hex-s-rb760igs-for-home-office-use)
+[Mikrotik Hex S Router for Home Office use](https://github.com/hallzhallz/Mikrotik-Hex-S)
+Guides for setting up and securing a Mikrotik Hex S Router for Home Office use with VLANs and a POE Switch.
 
-[2024-03-02 Mikrotik hEX S and POE Switch](/2024-03-02%20Mikrotik%20hEX%20S%20and%20POE%20Switch)
+[Live Wedding Album application]
+Windows application for displaying photos at a wedding.
 
 ## Articles
 
