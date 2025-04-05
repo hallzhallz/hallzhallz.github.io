@@ -1,4 +1,4 @@
-# robotification.com
+# ![Robotification.com](robotification.png)
 
 ## Projects
 
