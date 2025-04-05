@@ -39,17 +39,7 @@ An browser based interactive christmas display.
 [Planners](/Planners)
 2009-08-25
 
-- **any_day_planner.pdf** is a printable template for a to-do list.
-- **notebook.pdf** is a printable notebook. For best results print as a duplex and staple book on an office copier.
-```
-______________
-|            |
-[]  staple   |
-|            |
-|            |
-[]  staple   |
-|____________|
-```
+PDF Printable to-do list planners.
 
 [How Apple should have implemented the controls on the new iPod Shuffle](/AppleShuffle)
 2009-03-18
