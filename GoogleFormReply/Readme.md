@@ -12,4 +12,5 @@ Luckily you can use a spreadsheet formula to easily create a ‘Reply’ email l
 5. Go to the view menu and select ‘List View’ to make the links easily clickable.
 
 Unfortunately you cannot automatically populate the subject and body of the email. Whilst google spreadsheet supports `mailto:` urls it doesn’t support the `?subject=` and `&body=` extensions.
+
 ![](reply_link_list_view.jpg)
