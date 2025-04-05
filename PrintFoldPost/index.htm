@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Print, Fold, Post: The Printable Envelope</title>
+    <link href="Web.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="Print.css" rel="stylesheet" type="text/css" media="print" />
+    <script language="javascript" type="text/javascript">
+        function trim(str) {
+            return str.replace(/(^\s\s*|\s\s*$)/gi, '');
+        }
+
+        function copyAddr() {
+            var addressText = document.getElementById("addressText").value;
+            var addressLabel = document.getElementById("addressLabel");
+            var message = document.getElementById("message");
+
+            var lines = trim(addressText).match(/(\n|\r\f|\r|\f)+/gi);
+            var maxLines = 7
+            if (lines != null && lines.length > maxLines) {
+                message.innerHTML = "Oops, looks like your address has too many lines to fit!"
+            } else {
+                message.innerHTML = "";
+            }
+
+            addressLabel.style.left = (28 + ((maxLines - lines.length)*3)) + "%"; //adjust address position on front of envolope
+            addressLabel.innerHTML = trim(addressText).replace(/(\n|\r\f|\r|\f)/gi, "<br />").replace(/  /g,"&nbsp;");
+
+        }
+
+        function showHidePrompt(show) {
+            var addressMessage = "Enter Address Here, then click Print!";
+            var addressText = document.getElementById("addressText");
+            if (show && trim(addressText.value) == "") {
+                addressText.value = addressMessage;
+            } else if (!show && addressText.value == addressMessage) {
+                addressText.value = "";
+            }
+        }
+
+        function recordPrint() {
+            _gaq.push(['_trackEvent', 'Home', 'Print', 'DL Envelope']);
+        }
+
+        function DoPrint() {
+            showHidePrompt(0);
+            copyAddr();
+            window.print();
+            recordPrint();
+        }
+
+    </script>
+</head>
+<body onload="setInterval('copyAddr()',200);">
+    <div class="web">
+        <div class="envelope">
+            <textarea id="addressText" class="addressIn" onfocus="showHidePrompt(0);" onblur="showHidePrompt(1);"
+                onselect="showHidePrompt(0);" cols="30" rows="8">Enter Address Here, then click Print!</textarea>
+            <div class="message" id="message">
+            </div>
+        </div>
+        <div style="clear: both;">
+        </div>
+        <div class="stepWidth">
+            <div class="step">
+                <input class="stepH" type="button" name="Print" value="Print" onclick="DoPrint();" />
+                <br />
+                <img alt="Print" src="print.png" />
+            </div>
+            <div class="step stepN">
+                <div class="stepH">
+                    Fold</div>
+                <br />
+                <img alt="Print" src="fold.png" />
+            </div>
+            <div class="step stepN">
+                <div class="stepH">
+                    Post</div>
+                <br />
+                <img alt="Print" src="post.png" />
+            </div>
+            <div style="clear: both;">
+            </div>
+        </div>
+        <div style="clear: both;">
+        </div>
+        <div class="fixWidth footer">
+            <p>
+                Print Fold Post lets you easily print an addressed envelope from the web. Just fill
+                in your address and click print.
+            </p>
+            <p>
+                The envelope is a size DL envelope.
+            </p>
+            <p>
+                To see your envelope before you print it select 'Print Preview' in your web browser.
+            </p>
+            <p style="font-size: smaller;">
+                &copy; 2010 David Hall, email: contact - at - robotification - dot - com
+            </p>
+        </div>
+    </div>
+    <!-- print start -->
+    <img alt="Fold Pattern" class="print pattern" src="PrintFoldPostLetter.png" />
+    <div class="rotate print addressOut" id="addressLabel">
+    </div>
+    <div class="print sender rotate">
+    </div>
+    <!-- print end -->
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-9020389-4']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</body>
+</html>

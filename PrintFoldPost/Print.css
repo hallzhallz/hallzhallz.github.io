@@ -1,0 +1,47 @@
+﻿div
+{
+    display: none;
+}
+
+.print
+{
+    display: inline;
+}
+
+.pattern
+{
+    z-index: 10;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.addressOut
+{
+    z-index: 100;
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    bottom: 12%;
+    left: 28%;
+    font-family: Arial;
+    font-size: 16pt;
+}
+
+.sender
+{
+    z-index: 100;
+    position: absolute;
+    top: 5cm;
+    left: 3cm;
+}
+
+.rotate
+{
+    /* for firefox, safari, chrome, etc. */
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg); /* for ie */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
