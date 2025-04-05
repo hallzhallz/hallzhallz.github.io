@@ -1,4 +1,5 @@
-# robotification.com
+![Robotification.com](robotification.png)
+---
 
 ## Projects
 
@@ -35,4 +36,5 @@ Any Day Planner is a printable template for a to-do list.
 Handy Linux commands and scripts
 
 ---
+
 &copy; David Hall
