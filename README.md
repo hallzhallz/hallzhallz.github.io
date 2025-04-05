@@ -37,7 +37,7 @@ Print Fold Post is a printable envelope. Simply enter your address and print, an
 2010-01-22
 
 
-[Interactive Christmas](https://hallzhallz.github.io/InteractiveChristmas/index.htm)
+[Interactive Christmas](/InteractiveChristmas)
 2009-12-08
 
 An browser based interactive christmas display.
