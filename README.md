@@ -10,7 +10,9 @@ Guides for setting up and securing a Mikrotik Hex S Router for Home Office use w
 
 Windows application for displaying photos at a wedding.
 
+[Recipes](/Recipes)
 
+Some (food) recipes.
 
 ## Articles
 
@@ -59,6 +61,8 @@ Critique of the first iPod Shuffle and suggested better controls.
 2008-03-12
 
 Handy Linux commands and scripts
+
+
 
 ---
 
