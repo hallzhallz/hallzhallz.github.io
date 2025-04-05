@@ -29,6 +29,10 @@ An interactive christmas display
 
 Any Day Planner is a printable template for a to-do list.
 
+[Linux](/Linux)
+2008-03-12
+
+Handy Linux commands and scripts
 
 ---
 &copy; David Hall
