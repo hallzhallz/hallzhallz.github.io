@@ -15,6 +15,12 @@ Windows application for displaying photos at a wedding.
 
 ## Articles
 
+[Adding Aux Line-in (and USB Power) to an 03 Subaru Impreza Stock Radio](/LineInSubaruImprezaStockRadio)
+2011-08-13
+
+Line in for old Subaru stock radio.
+
+
 [Print Fold Post](https://hallzhallz.github.io/PrintFoldPost/index.htm)
 2010-05-16
 
@@ -23,7 +29,7 @@ Print Fold Post is a printable envelope. Simply enter your address and print, an
 [Interactive Christmas](https://hallzhallz.github.io/InteractiveChristmas/index.htm)
 2009-12-08
 
-An interactive christmas display
+An browser based interactive christmas display.
 
 [Planners](/Planners)
 2009-08-25
