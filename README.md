@@ -10,7 +10,7 @@ Guides for setting up and securing a Mikrotik Hex S Router for Home Office use w
 
 Windows application for displaying photos at a wedding.
 
-[Recipes](/Recipes)
+[Recipes](/Articles/Recipes)
 
 Some (food) recipes.
 
