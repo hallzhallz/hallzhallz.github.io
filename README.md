@@ -68,16 +68,16 @@ Critique of the first iPod Shuffle and suggested better controls.
 Handy Linux commands and scripts
 
 
-[Smart Antennas](./Articles/SmartAntennas)
-2007-06-15
-
-Paper explaining Smart Antennas.
-
 [Program a PIC 16F690 with the DIY Kit 150 Programmer](/Articles/PicProgramming)
 2007-09-16
 
 A guide on how to program a 16F690 PIC Microcontroller.
 
+
+[Smart Antennas](./Articles/SmartAntennas)
+2007-06-15
+
+Paper explaining Smart Antennas.
 
 ---
 
